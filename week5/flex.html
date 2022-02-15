@@ -14,31 +14,49 @@
     aside{
         border: 1px solid red;
     }
+.header{
+    margin-top: 10vw;
+    border: 1px solid blue;
+    padding: 5vw;
+    padding-left: 25vw;
+}
+.flexconteinerfooter{
+    width: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between
+}
+.section{
+    padding: 2vw;
+}
 </style>
 
 
 </head>
 
 <body>
-    <footer>
+    <header class="header">
         Шапка страницы
-          </footer>
-          <main>
-              <h1>Основная часть </h1>
+          </header>
+          <main class="menu">
+              <article><h1>Основная часть </h1>
       <section>
-      <p class="1">Еще 1</p>
+      <div class="flexcontainer"><p class="1">Еще 1</p>
       <p class="2">Еще 2</p>
       <p class="3">Еще 3</p>
+    </div>
       </section>
+    </article>
       <aside class="side">
       Боковая область 
       </aside>
           </main>
           <footer>
-      <div>
-          <p class="section1">Секция футера</p>
-          <p class="section2"></p>
-          <p class="section3"></p>
+      <div class="flexconteinerfooter">
+          <p class="section">Секция футера1</p>
+          <p class="section">Секция футера2</p>
+          <p class="section">Секция футера3</p>
+          <p class="section">Секция футера4</p>
       </div>
           </footer> 
 </body>
