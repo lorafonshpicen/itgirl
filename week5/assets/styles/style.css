@@ -1,0 +1,53 @@
+.flexcontainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: stretch;
+    width: 50vw;
+}
+
+.flexcontainerfooter {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.side {
+    width: 20vh;
+
+}
+
+.sectionfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content:
+        align-items: stretch;
+    padding: 2vw;
+}
+
+.flexcontainer_section {
+
+    display: flex;
+    width: 25vh;
+    flex-wrap: wrap;
+
+}
+
+.column1 {
+    flex: 0 1 100%;
+}
+
+.column2 {
+    flex: 0 1 50%;
+}
+
+column3 {
+    flex: 0 1 50%;
+}
