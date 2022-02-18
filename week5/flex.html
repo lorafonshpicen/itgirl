@@ -8,56 +8,89 @@
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 <link rel="stylesheet" href="assets/styles/style.css">
 <style>
-    footer,
-    h1,
-    p,
-    aside{
-        border: 1px solid red;
-    }
-.header{
-    margin-top: 10vw;
+
+.flexcontainer{
     border: 1px solid blue;
-    padding: 5vw;
-    padding-left: 25vw;
-}
-.flexconteinerfooter{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items:stretch;
     width: 50vw;
+}
+
+.flexcontainerfooter{
     display: flex;
     flex-direction: row;
-    justify-content:space-between
+    align-items: center;
+    justify-content: space-around;
 }
-.section{
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.side{
+    width: 20vh; 
+
+}
+.sectionfooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: 
+    align-items: stretch;
     padding: 2vw;
 }
+.flexcontainer_section{
+    
+    display: flex;
+    width: 25vh;
+    flex-wrap:wrap;
+    
+}
+
+.column1{
+    flex:0 1 100%;
+}
+.column2{
+    flex:0 1 50%;
+}
+
+column3{
+    flex:0 1 50%;
+}
+
 </style>
-
-
 </head>
-
 <body>
-    <header class="header">
-        Шапка страницы
+    <div class="flexcontainer">
+    <header >
+        <h1>Шапка страницы</h1>
           </header>
-          <main class="menu">
-              <article><h1>Основная часть </h1>
+          <main class="main">
+              <article><h2>Основная часть </h2>
       <section>
-      <div class="flexcontainer"><p class="1">Еще 1</p>
-      <p class="2">Еще 2</p>
-      <p class="3">Еще 3</p>
+      <div class="flexcontainer_section">
+      <p class="column1">Еще 1</p>
+      <p class="column2">Еще 2</p>
+      <p class="column3">Еще 3</p>
     </div>
       </section>
     </article>
-      <aside class="side">
-      Боковая область 
+      <aside>
+        <div class="side">
+     <h3> Боковая область </h3>
+    </div>
       </aside>
           </main>
           <footer>
-      <div class="flexconteinerfooter">
-          <p class="section">Секция футера1</p>
-          <p class="section">Секция футера2</p>
-          <p class="section">Секция футера3</p>
-          <p class="section">Секция футера4</p>
-      </div>
+              <div class="flexcontainerfooter">
+          <p class="sectionfooter">Секция футера1</p>
+          <p class="sectionfooter">Секция футера2</p>
+          <p class="sectionfooter">Секция футера3</p>
+          <p class="sectionfooter">Секция футера4</p>
+        </div>
           </footer> 
+        </div>    
 </body>
 </html>
