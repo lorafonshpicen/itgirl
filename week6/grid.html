@@ -7,34 +7,54 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="assets/styles/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Ubuntu+Condensed&display=swap" rel="stylesheet">
     <style>
         .container{
             font-family: 'Montserrat', sans-serif;
             display: grid;
-           grid-template-columns: 1fr 1fr ;
-            grid-template-rows: 100px 3fr 1fr 1fr 50px;
-            
+           grid-template-columns: ;
+            grid-template-rows: 10% 1fr 1fr 1fr  1fr;
+            height: 1070px;
         }
-        .header,
-        .footer{
-            grid-column: 1/3;
-            
-        }
+       
+    
+ .container_header{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     justify-content: space-between;
+     width: 768px;
+     height: 80px;
+ }
+ .header_phone{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     align-content:center;
+     
+ }
+ .conteiner_main{
+   
+ }
+ .yellow{
+     background-color: #FBD846;
 
+ }
+ .price1{
+    
+ }
     </style>
 </head>
 <body class="container">
    <header class="header">
 <div class="container_header">
 <img src="assets/styles/logo.png" alt="Логотип">
-</div>
+
 <nav class="header_phone"> 
 <img src="assets/styles/Vector(2).png" alt="КартинкаТелефона">
     <p>
         +7 (3466) 68-15-98
     </p>
 </nav>
+</div>
    </header> 
    <main>
        <section>
@@ -43,7 +63,7 @@
           <p>
             Изготовим и доставим кухонный гарнитур в Излучинск, Мегион, Стрежевой, Лангепас, Радужный и другие города ХМАО
            </p>
-<div class="main_conteiner">
+<div class="conteiner_main">
     <p>Рассрочка без переплаты!</p>
     <p>Более 500 цветов фасадо</p>
     <p>Бесплатный замер и дизайн проект</p>
@@ -64,10 +84,10 @@
        <section class="yellow">
           <h2>Популярные модели</h2> 
         <div class="main_models">
-    <p class="price1"><img src="" alt="ФотоКухни1">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</p>
-    <p class="price2"><img src="" alt="ФотоКухни2">Кухонный гарнитур с фотопечатью “Орхидея”. Длина 2 метра.</p>
-    <p class="price3"><img src="" alt="ФотоКухни3">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</p>
-    <p class="price4"><img src="" alt="ФотоКухни4">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</p>
+    <p class="price1"><img src="assets/styles/loft1.png" alt="ФотоКухни1">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</p>
+    <p class="price2"><img src="assets/styles/ФотоКухни2.png" alt="ФотоКухни2">Кухонный гарнитур с фотопечатью “Орхидея”. Длина 2 метра.</p>
+    <p class="price3"><img src="assets/styles/ФотоКухни3.png" alt="ФотоКухни3">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</p>
+    <p class="price4"><img src="assets/styles/ФотоКухни4.png" alt="ФотоКухни4">Кухонный гарнитур “ЛОФТ”. Длина 2 метра.</p>
         </div>  
         <!-- main_model -->
         <button class="button_seeall">Посмотреть все товары </button>
