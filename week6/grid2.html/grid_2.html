@@ -9,52 +9,164 @@
     <link rel="stylesheet" href="assets/styles/style.css">
     <link rel="stylesheet" href="assets/styles/font/Roboto/Roboto-Regular.ttf">
     <style>
-        
+      .flexcontainer {
+          display: flex;
+          flex-direction: column;
+          font-family: 'Roboto', sans-serif;
+          width: 100vw;
+      }  
+       .headercontainer{
+           display: flex;
+           flex-direction: row;
+           height: 75px;
+           justify-content: space-around;
+           align-items: center;
+        border-bottom: 1px solid #5C5C5C;
+       } 
+       a{
+        color: #5C5C5C;
+        font-size: 15px;
+        line-height: 15px;
+        text-decoration: none;
+       }
+
+ .buttonheader{
+background: #161616;
+border-radius: 100px;
+height: 39px;
+color: white;
+font-size: 15px;
+line-height: 15px;
+}
+.block_1{
+  
+    height: 50vh;
+    width: 100vw;
+}
+.textblock_1{
+
+  
+}
+.imgblock_1{
+
+    background: #161616;
+border: 30px solid #161616;
+box-sizing: border-box;
+box-shadow: 6px 6px 30px rgba(22, 22, 22, 0.2);
+border-radius: 28px;
+
+
+}
+.buttonblock_1_black{
+background: #161616;
+border: 2px solid #000000;
+box-sizing: border-box;
+border-radius: 100px;
+color: white;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 19px;
+}
+.buttonblock_1{
+border: 2px solid #000000;
+box-sizing: border-box;
+border-radius: 100px; 
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 19px;
+}
+.buttons{
+  
+}
+.bg_block_2{
+    display: flex;
+
+height: 50vh;
+width: 100vw;
+background-image: url('assets/styles/IMAGE\ \(1\).png');
+}
+.block_2text{
+  
+    color: white;
+  
+}
+/*   height: 294px;
+    width: 340px; */
+    .bg_block_3{
+        background-image: url("assets/styles/IMAGE3.png");
+        height: 50vh;
+        color: #161616
+    }
+    .bg_block_4{
+    background: #161616;
+    height: 50vh;
+    color: white;
+}
+.bg_block_5{
+  
+    background-color: white;
+align-content: space-around;
+}
     </style>
 </head>
 
-<body>
-  <header>
-      <img src="assets/styles/Vector (2).png" alt="logo_1">
-      <img src="assets/styles/Vector (3).png" alt="logo_2">
-<nav><a>About us</a>
-<a>Help</a>
+<body> 
+    <div class="flexcontainer ">
+    <header class="headercontainer">
+      <div class="logo"> <img src="assets/styles/Vector (2).png" alt="logo_1">
+        <img src="assets/styles/Vector (3).png" alt="logo_2">
+    </div> 
+<nav><a href="#">About us</a>
+<a href="#">Help</a>
 </nav>
-<div>
-
+<div class="Paper">
+<img src="assets/styles/Path_P.png" alt="P">
+<img src="assets/styles/Shape_a.png" alt="a">
+<img src="assets/styles/Shape_p.png" alt="p">
+<img src="assets/styles/Shape_e.png" alt="e">
+<img src="assets/styles/Path_r.png" alt="r">
+<img src="assets/styles/Shape_R.png" alt="R">
 </div>
-<nav><a>Explore</a>
-<button>Download</button>
+<nav><a href="#">Explore</a>
+<button class="buttonheader">Download</button>
 </nav>
-  </header>  
-  <main>
-      <section><at>Creativity at your fingertips</h1>
-      <p>Whether you’re coloring inside the lines or thinking outside the box, it’s never been easier to get ideas on Paper</p>
-<button>Download</button>
-<button>Explore</button>
-<img src="assets/styles/IMAGE.png">
-<img src="assets/styles/Rectangle (2).png"></section>
-<section>
-    <div style="background-image: url ('assets/style/IMAGE (1).png');">
-        <p class=bg__1_text1>Bring life to your ideas</p>
-        <p class=bg__1_text2>We’ve polished every tap, swipe, and pinch to mirror your natural gestures. Watch life-like journals jump from the page, while 3D interactions create our most immersive experience yet.</p>
+    </header>  
+    <main>
+        <section>
+<div class="block_1"> 
+    <div class="textblock_1">
+        <h1>Creativity at your fingertips</h1>
+    <p>Whether you’re coloring inside the lines or thinking outside the box, it’s never been easier to get ideas on Paper</p>
+<div class="buttons">
+    <button class="buttonblock_1_black">Download</button>
+<button class="buttonblock_1">Explore</button></div>
+ <img src="assets/styles/IMAGE.png"></div>
+</div>
+<section class="block_2">
+    <div class="bg_block_2">
+        <div class="block_2text"><p class=bg__1_text1>Bring life to your ideas</p>
+        <p class=bg__1_text2>We’ve polished every tap, swipe, and pinch to mirror your natural gestures. Watch life-like journals jump from the page, while 3D interactions create our most immersive experience yet.</p></div>
     </div>
-   
 </section>
 <section>
-  <div style="background-image:url('assets/style/IMAGE3.png');">
-    <p class=bg__2_text1>Effortlessexpression</p>
-    <p class=bg__2_text3>Bring your ideas to life in all their messy glory. Paper’s perfectly-tuned tools make it easy to sketch, write, paint, draw—wherever your thoughts take you.</p>
-  </div>
+    <div class="bg_block_3">
+    <p class=block3_text1>Effortlessexpression</p>
+    <p class=block3_text2>Bring your ideas to life in all their messy glory. Paper’s perfectly-tuned tools make it easy to sketch, write, paint, draw—wherever your thoughts take you.</p>
+    </div>
 </section>
-  <section>
-      <!-- background: #161616; -->
-    <div style="background-image:url('assets/styles/Rectangle\ \(1\).png');">
-    <p>A helping hand</p>
-<p>Struggling to get started? The Paper Store is packed with tips and tricks from our favorite creators to help you conquer your fear of the big, blank page.</p>
+    <section>
+        <!-- background: #161616; -->
+    <div class="bg_block_4">
+    <div class="block_4text"><p class="block4_text1">A helping hand</p>
+<p class="block4_text2">Struggling to get started? The Paper Store is packed with tips and tricks from our favorite creators to help you conquer your fear of the big, blank page.</p></div>
 </div>
-  </section>
+    </section>
+    
 <section>
+    <div class="bg_block_5">
+   
     <img src="assets/styles/IMAGE (3).png">
     <img src="assets/styles/IMAGE (4).png">
     <img src="assets/styles/IMAGE (5).png">
@@ -77,19 +189,21 @@ border-radius: 28px; -->
         <p>Available for iPhone and iPad</p>
         <button>Download</button>
     </div>
+</div>
 </section>
-  </main>
+    </main>
+
 <footer>
     <!-- background black -->
     <div>
-       <ul>
-           <li>Products</li>
-           <li>Get WeTransfer Pro</li>
-           <li>WeTransfer</li>
-           <li>Paste®</li>
-           <li>Collect</li>
-           <li>Paper®</li>
-       </ul> 
+        <ul>
+            <li>Products</li>
+            <li>Get WeTransfer Pro</li>
+            <li>WeTransfer</li>
+            <li>Paste®</li>
+            <li>Collect</li>
+            <li>Paper®</li>
+        </ul> 
     </div>
     <div>
         <ul>
@@ -115,5 +229,7 @@ border-radius: 28px; -->
         border 1px -->
     </div>
 </footer>
+</div>
+<!-- flexcontainer -->
 </body>
 </html>
