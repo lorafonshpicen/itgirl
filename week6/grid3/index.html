@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-<>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,33 +16,131 @@
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
 }
+.section{
+    color:  #838383;
+    font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 24px;
+ 
+}
 .header_line{
     display: flex;
     flex-direction: row;
+    width: 1135px;
+    height: 60px;
 }
+.header_bg{
+    display: flex;
+    margin-right: 0;
+    justify-content: center;
+    
+    width: 1110px;
+    height: 197px; 
+    background: #101010;
+box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+border-radius: 30px;
+}
+.header_block__text{
+    color: #FFFFFF;
 
+}
+.header_block{
+    display: flex;
+    flex-direction: row;
+}
+.menu_options1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.menu{
+    margin-left: 165px;
+    margin-right: 165px;
+
+}
+.menu_options__bg{
+    background: #FFFFFF;
+    width: 350px;
+    height: 407.65px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+.menu_options2{
+    display: flex;
+    flex-direction: row;
+
+}
 </style>
 
 <body>
     <div class="flexcontainer">
     <header>
-        <nav class="header_line">
-            <div class="logo">Выбрать модель телефона</div>
-            <img src="assets/styles/image/Vector.svg" alt="arrow">
+<nav class="header_line">
+            <div class="logo">QPICK</div>
             <div class="header_image"> 
-                <img src="assets/styles/image/Vector (1).svg" alt="image_phone"></div>
-       <div>
-           <img src="assets/styles/image/Vector (2).svg" alt="like">
-           <img src="assets/styles/image/Vector (3).svg" alt="basket">
-       </div> </nav>
-       <div class="header_bg">
+                <img src="assets/styles/image/Vector.svg" alt="image_phone"></div>
+            <div>Выбрать модель телефона</div>
+            <img src="assets/styles/image/Vector (1).svg" alt="arrow">
+           
+    <div class="">
+            <img src="assets/styles/image/Vector (2).svg" alt="like">
+            <img src="assets/styles/image/Vector (3).svg" alt="basket">
+    </div>
+</nav>
+    <!-- nav header_line-->
+        <div class="header_bg">
         <div class="header_block"><div class="header_block__text">Аксессуары для Iphone 13 Pro Max</div>
      <img src="assets/styles/image/iPhone-13-Pro-Max-silver-1000x1000 1.png" alt="iPhone-13-Pro-Max-silver">
     </div>
     </div> 
-
-
     </header>
+    <main class="menu"> 
+        <section>
+            <p class="section">Чехлы</p>
+        <div class="menu_options1">
+            
+           <div class="menu_options__bg">
+               <div>
+                   <img src="assets/styles/image/22459-iwt 1.png" alt="Стеклянный_чехол">
+                   <p>Стеклянные</p>
+               </div>
+           </div>
+           <div class="menu_options__bg">
+            <div>
+                <img src="assets/styles/image/mellow-yellow-1 1.png" alt="Силиконовый_чехол">
+                <p>Силиконовые</p>
+            </div>
+           </div>
+           <div class="menu_options__bg">
+            <div>
+                <img src="assets/styles/image/Image.png" alt="Кожаный_чехол">
+                <p>Кожаные</p>
+            </div>
+           </div>
+        </div> 
+        <!-- div menu_options -->
+    </section>
+<section>
+    <p class="section">Наушники</p>
+    <div class="menu_options2">
+        <div class="menu_options__bg"> <div><img src="assets/styles/image/headphones1.png" alt="headphones1">
+        <p>Apple BYZ S852I</p></div></div>
+        <div class="menu_options__bg"> <div> <img src="assets/styles/image/headphones2.png" alt="headphones2">
+        <p>Apple EarPods</p></div></div>
+        <div class="menu_options__bg"> <div> <img src="assets/styles/image/headphones3.png" alt="headphones3">
+            <p>Apple EarPods</p></div></div>
+</div></section>
+
+<section><p class="section">Беспроводные наушники</p>
+    <div class="menu_options3">
+    <img src="" alt="">
+</div></section>
+
+    </main>
 </div>  
+<!-- div  flexcontainer-->
 </body>
 </html>
