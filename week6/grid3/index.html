@@ -22,19 +22,22 @@
 font-weight: 600;
 font-size: 20px;
 line-height: 24px;
- 
 }
+
+.logo{
+    font-weight: 700; 
+    font-size: 25px;
+}
+
 .header_line{
     display: flex;
     flex-direction: row;
     width: 1135px;
     height: 60px;
 }
+
 .header_bg{
-    display: flex;
-    margin-right: 0;
-    justify-content: center;
-    
+   
     width: 1110px;
     height: 197px; 
     background: #101010;
@@ -48,6 +51,15 @@ border-radius: 30px;
 .header_block{
     display: flex;
     flex-direction: row;
+    align-self: center;
+
+}
+.header_block__text{
+    font-weight: 600;
+font-size: 30px;
+padding: 58px 0px 65px 50px;
+
+
 }
 .menu_options1{
     display: flex;
@@ -73,6 +85,21 @@ border-radius: 30px;
     flex-direction: row;
 
 }
+.menu_options3{
+    display: flex;
+    flex-direction: row;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1110px;
+    height: 149px; 
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px 30px 0px 0px; 
+}
+
 </style>
 
 <body>
@@ -91,24 +118,25 @@ border-radius: 30px;
     </div>
 </nav>
     <!-- nav header_line-->
+    
         <div class="header_bg">
-        <div class="header_block"><div class="header_block__text">Аксессуары для Iphone 13 Pro Max</div>
-     <img src="assets/styles/image/iPhone-13-Pro-Max-silver-1000x1000 1.png" alt="iPhone-13-Pro-Max-silver">
-    </div>
-    </div> 
+            <div class="header_block">
+            <div class="header_block__text">Аксессуары для Iphone 13 Pro Max </div>
+                <img src="assets/styles/image/iPhone-13-Pro-Max-silver-1000x1000 1.png" alt="iPhone-13-Pro-Max-silver">
+            </div>
+        </div>
     </header>
     <main class="menu"> 
         <section>
             <p class="section">Чехлы</p>
         <div class="menu_options1">
-            
-           <div class="menu_options__bg">
-               <div>
-                   <img src="assets/styles/image/22459-iwt 1.png" alt="Стеклянный_чехол">
-                   <p>Стеклянные</p>
-               </div>
-           </div>
-           <div class="menu_options__bg">
+            <div class="menu_options__bg">
+                <div>
+                    <img src="assets/styles/image/22459-iwt 1.png" alt="Стеклянный_чехол">
+                    <p>Стеклянные</p>
+                </div>
+            </div>
+        <div class="menu_options__bg">
             <div>
                 <img src="assets/styles/image/mellow-yellow-1 1.png" alt="Силиконовый_чехол">
                 <p>Силиконовые</p>
@@ -136,10 +164,25 @@ border-radius: 30px;
 
 <section><p class="section">Беспроводные наушники</p>
     <div class="menu_options3">
-    <img src="" alt="">
+        <div class="menu_options__bg"> <div><img src="assets/styles/image/wireless_headphones1.png" alt="wireless_headphones1">
+            <p>Apple BYZ S852I</p></div></div>
+            <div class="menu_options__bg"> <div> <img src="assets/styles/image/wireless_headphones2.png" alt="menu_options3"">
+            <p>Apple EarPods</p></div></div>
+            <div class="menu_options__bg"> <div> <img src="assets/styles/image/wireless_headphones3.png" alt="wireless_headphones3">
+                <p>Apple EarPods</p></div></div>
 </div></section>
 
     </main>
+    <footer class="footer">
+        <div class="logo">QPICK</div>
+        <div class="footer_column1"><p>Избранное</p>
+        <p>Корзина</p>
+        <p>Контакты</p></div>
+        <div class="footer_column2">
+            <p>Условия сервиса</p>
+
+        </div>
+    </footer>
 </div>  
 <!-- div  flexcontainer-->
 </body>
