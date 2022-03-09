@@ -1,10 +1,16 @@
-.flexcontainer {
+body {
     background-color: #EAEAEA;
+}
+
+.flexcontainer {
+
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     height: 100vh;
     font-family: 'Montserrat', sans-serif;
+    margin: auto;
 }
 
 .section {
@@ -16,7 +22,7 @@
 }
 
 .logo {
-    font-weight: 700;
+    font-weight: 700px;
     font-size: 25px;
 }
 
@@ -40,6 +46,7 @@
 .baner {
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .header_bg {
@@ -81,7 +88,7 @@
     display: flex;
     justify-content: center;
     background: #FFFFFF;
-    width: 350px;
+    width: 95%;
     height: 407.65px;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
@@ -100,17 +107,20 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding: 20px;
+    width: 100%;
 }
 
 .footer_bg {
-    margin: 50px;
-    width: 1110px;
-    height: 149px;
+
+
     background: #FFFFFF;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     border-radius: 30px 30px 0px 0px;
     display: flex;
     flex-direction: row;
+    flex-grow: 1;
+
 }
 
 .footer_column {
