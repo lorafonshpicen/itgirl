@@ -1,0 +1,133 @@
+.flexcontainer {
+    background-color: #EAEAEA;
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.section {
+    color: #838383;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.header_line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1135px;
+    height: 60px;
+    margin: 30px;
+}
+
+.header_line__text {
+    padding: 0;
+}
+
+.header_select {
+    color: #101010;
+}
+
+.baner {
+    display: flex;
+    justify-content: center;
+}
+
+.header_bg {
+    background: #101010;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.header_block__text {
+    color: #FFFFFF;
+    width: 300px;
+    margin-right: 300px;
+    margin-left: 150px;
+    font-weight: 600;
+    font-size: 30px;
+    padding: 58px 0px 65px 50px;
+}
+
+.header_block {
+    display: flex;
+    flex-direction: row;
+}
+
+.header_block__image {
+    height: 226px;
+    width: 321px;
+}
+
+.header_image {
+    margin-left: 50px;
+}
+
+.menu {
+    margin-left: 165px;
+    margin-right: 165px;
+}
+
+.menu_options__bg {
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    width: 350px;
+    height: 407.65px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.menu_options1,
+.menu_options2,
+.menu_options3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.footer_bg {
+    margin: 50px;
+    width: 1110px;
+    height: 149px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px 30px 0px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.footer_column {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+img {
+    margin: 10px auto;
+}
+
+.logo_footer {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 25px;
+}
