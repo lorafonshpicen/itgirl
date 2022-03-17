@@ -14,14 +14,12 @@
         }
         .header{
             display: grid; 
-            width: 100%;
-            grid-template-areas: "header-logo header-nav header-nav  header-contacts"
-                                    "header-text header-text header-img header-img"
-                                "header-text header-text header-img header-img"
-                                "header-text header-text header-img header-img";
-            
-            grid-template-columns: 1fr 1fr 1fr 1fr ;
-            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            grid-template-areas: "header-logo header-nav header-nav  header-contacts "
+                                    "  header-text header-text header-img header-img ";
+            grid-template-columns:  1fr 1fr 1fr 1fr ;
+            gap: 15px;
         }
         .header-logo{
             grid-area: header-logo;
@@ -37,6 +35,14 @@
         }
         .header-img{
             grid-area: header-img;
+           
+        }
+        .header-imgbox{
+            width: ;
+            height: ;
+        }
+        .header-nav_link{
+            padding: 7px;
         }
     </style>
 </head>
@@ -63,9 +69,9 @@
                     <a href="#" class="button-green">Make Appointment</a>
                 </div>
             </div>
-           
-                <img class="header-img" src="assets/styles/imageVC/imgheader.svg" alt="picture-dog">
-           
+           <div class="header-imgbox">
+                <!-- <img class="header-img" src="assets/styles/imageVC/imgheader.svg" alt="picture-dog"> -->
+            </div>
         </div>
 </header>
 
