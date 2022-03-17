@@ -15,12 +15,13 @@
         .header{
             display: grid; 
             width: 100%;
-            grid-template-areas: 
-            "header-logo header-nav header-nav  header-contacts"
-            "header-text header-text header-img header-img"
-            "header-text header-text header-img header-img"
-            "header-text header-text header-img header-img";
+            grid-template-areas: "header-logo header-nav header-nav  header-contacts"
+                                    "header-text header-text header-img header-img"
+                                "header-text header-text header-img header-img"
+                                "header-text header-text header-img header-img";
+            
             grid-template-columns: 1fr 1fr 1fr 1fr ;
+            align-items: center;
         }
         .header-logo{
             grid-area: header-logo;
