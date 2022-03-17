@@ -13,40 +13,34 @@
             background-color:  #E5E5E5;
         }
         .header{
-           display: grid; 
-           grid-template-columns: 7% 1fr 5fr ;
-           grid-template-areas: 
-           ". header-logo header-nav header-contacts"
-           ". header-text header-text header-img header-img"
-           ". header-text header-text header-img header-img"
-           ". header-text header-text header-img header-img"
-           ". ";
-
+            display: grid; 
+            width: 100%;
+            grid-template-areas: 
+            "header-logo header-nav header-nav  header-contacts"
+            "header-text header-text header-img header-img"
+            "header-text header-text header-img header-img"
+            "header-text header-text header-img header-img";
+            grid-template-columns: 1fr 1fr 1fr 1fr ;
         }
-       .header-logo{
-           grid-area: header-logo;
-       }
-       .header-nav{
+        .header-logo{
+            grid-area: header-logo;
+        }
+        .header-nav{
         grid-area: header-nav;
-       }
-       .header-contacts{
+        }
+        .header-contacts{
         grid-area: header-contacts;
-       }
-       .header-text{
+        }
+        .header-text{
         grid-area: header-text;
-       }
-       .
-
-
-
-       
-
-
+        }
+        .header-img{
+            grid-area: header-img;
+        }
     </style>
 </head>
 <body class="body">
-    <header class="header">
-        <div class="header_row">           
+    <header class="header">                
                 <img class="header-logo" src="assets/styles/imageVC/vetcare.svg" alt="logo">
                 <nav class="header-nav">                      
                             <a href="#" class="header-nav_link">Start</a>
@@ -54,11 +48,11 @@
                             <a href="#" class="header-nav_link">About</a>
                             <a href="#" class="header-nav_link">News</a>
                             <a href="#" class="header-nav_link">Contact</a>
-                                <div class="header-contacts">
-                        <a href="#" class="button-red">384-129-293-39</a>
-                    </div>
-                </nav>
-            </div>       
+                            
+                </nav>    
+                <div class="header-contacts">
+                    <a href="#" class="button-red">384-129-293-39</a>
+                </div>            
         <div class="header-section1">
             <div class="header-text">
                 <div class="header-title">For Your Pet’s Natural Life & Care</div>
@@ -68,25 +62,12 @@
                     <a href="#" class="button-green">Make Appointment</a>
                 </div>
             </div>
-            <div class="header-img">
-                <img src="assets/styles/imageVC/imgheader.svg" alt="picture-dog">
-            </div>
+           
+                <img class="header-img" src="assets/styles/imageVC/imgheader.svg" alt="picture-dog">
+           
         </div>
 </header>
 
-<section class="section2">
-
-</section>
-<section class="section3">
-
-</section>
-<section class="section4">
-
-</section>
-
-    <footer class="footer">
-
-    </footer>
 </div>
 </body>
 </html>
