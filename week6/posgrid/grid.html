@@ -10,43 +10,127 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <style>
         .body{
-            background-color:  #E5E5E5;
+            background-color:  #f5dede;
+        }
+        .wrapper{
+            max-width: 80vw;
+            margin: 0 auto;
         }
         .header{
             display: grid; 
             width: 100vw;
-            height: 100vh;
-            grid-template-areas: "header-logo header-nav header-nav  header-contacts "
-                                    "  header-text header-text header-img header-img ";
+            min-height: 80vh;
+            grid-template-areas: "header-logo header-nav header-nav  header-contacts"
+                                    "header-text header-text header-img header-img";
             grid-template-columns:  1fr 1fr 1fr 1fr ;
             gap: 15px;
+            align-items: center;
         }
         .header-logo{
-            grid-area: header-logo;
+            grid-area: header-logo;          
         }
         .header-nav{
         grid-area: header-nav;
+        
         }
         .header-contacts{
         grid-area: header-contacts;
         }
         .header-text{
         grid-area: header-text;
+       
         }
         .header-img{
             grid-area: header-img;
-           
-        }
-        .header-imgbox{
-            width: ;
-            height: ;
+            width: 30vw;
+            margin: 60px;
+
         }
         .header-nav_link{
             padding: 7px;
+            text-decoration: none;
+            font-family: 'Nunito';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        color: #242851;
         }
+        .header-title{
+            font-family: Nunito;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 800;
+        }
+        .header-subtitle{
+            font-family: Quicksand;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 34px; 
+
+
+        }
+        .button{
+            background: linear-gradient(180deg, #FFA992 0%, #FF7852 65%);
+box-shadow: 0px 10px 25px rgba(255, 124, 84, 0.3);
+border-radius: 30px;
+        }
+        .section{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background: #FFECE4;
+            border-radius: 50px;
+            height: 50vh; 
+            font-family: 'Nunito';
+            font-style: normal;
+            font-weight: 800;
+
+        }
+       
+        .section__box{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 1fr 1fr 3fr ;
+            max-height: 50vh;
+            
+           
+        }
+        .headline{
+            grid-row: 1/2;
+            grid-column: 1/5;
+            font-size: 20px;
+            color: #FF7751;
+            justify-self: center;
+            align-self: end;
+        }
+    h1{
+      
+        font-size: 40px;
+        color: #242851;
+        grid-row: 2/3;
+        grid-column: 1/5;
+        margin: 0 auto;
+    }
+    h2{
+        font-size: 12px;
+       justify-self:  center;
+        
+    }
+    .section__item{
+        align-self: center;
+        margin: 20px;
+    }
+    .section__title{
+        font-family: 'Quicksand';
+        font-style: normal;
+        font-weight: 400; 
+        font-size: 10px; 
+        color: #707283;
+    }
     </style>
 </head>
 <body class="body">
+    <div class="wrapper">
     <header class="header">                
                 <img class="header-logo" src="assets/styles/imageVC/vetcare.svg" alt="logo">
                 <nav class="header-nav">                      
@@ -58,23 +142,50 @@
                             
                 </nav>    
                 <div class="header-contacts">
-                    <a href="#" class="button-red">384-129-293-39</a>
+                    <a href="#" class="header__button_red">384-129-293-39</a>
                 </div>            
-        <div class="header-section1">
+        
             <div class="header-text">
                 <div class="header-title">For Your Pet’s Natural Life & Care</div>
                 <span class="header-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit,sed do eiusmod tempor incididunt</span>
                 <div class="header-button">
-                    <a href="#" class="button-red">Our Services</a>
-                    <a href="#" class="button-green">Make Appointment</a>
+                    <a href="#" class="header__button_red">Our Services</a>
+                    <a href="#" class="header__button_green">Make Appointment</a>
                 </div>
             </div>
-           <div class="header-imgbox">
-                <!-- <img class="header-img" src="assets/styles/imageVC/imgheader.svg" alt="picture-dog"> -->
-            </div>
-        </div>
+            <img class="header-img" src="assets/styles/imageVC/imgheader.svg" alt="picture-dog">
+            
+        
 </header>
+<section class="section">
+<div class="section__bg">
+    <div class="section__box">
+        <div class="headline"> 
+            Care For Your Pet
+        </div>
+        <h1>
+            What We Do
+        </h1>
+        
+        <div class="section__item 1">
+            <h2>Pet Grooming</h2>
+            <div class="section__title 1">There are many variatio of passage of Lorem for a Ipsum available</div>
+        </div>
+        <div class="section__item 2">
+            <h2>Veterinary</h2>
+            <div class="section__title 2">There are many variatio of passage of Lorem for a Ipsum available</div>
+        </div>
+        <div class="section__item 3">
+            <h2>Dog Setting</h2>
+            <div class="section__title 3">There are many variatio of passage of Lorem for a Ipsum available</div></div>
+        <div class="section__item 4"> 
+            <h2>Healthy Meals</h2>
+            <div class="section__title 4">There are many variatio of passage of Lorem for a Ipsum available</div></div>
 
+    </div>
+
+</div>
+</section>
 </div>
 </body>
 </html>
